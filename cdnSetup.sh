@@ -20,16 +20,16 @@ az group create \
 # create cdn profile
 az cdn profile create \
 	-l $cdnProfileLocation \
-    -g $resourceGroup \
-    -n $profileName \
-    --sku $pricingTier
+	-g $resourceGroup \
+	-n $profileName \
+	--sku $pricingTier
 
 # create cdn endpoint
 az cdn endpoint create \
-    -g $resourceGroup \
+	-g $resourceGroup \
 	-l $cdnEndPointLocation \
-    -n $endPointName \
-    --profile-name $profileName \
-    --origin $origin \
+	-n $endPointName \
+	--profile-name $profileName \
+	--origin $origin \
 	--origin-host-header $originHostHeader \
 	--origin-path $originPath
