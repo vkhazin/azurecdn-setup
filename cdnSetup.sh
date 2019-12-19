@@ -12,7 +12,7 @@ origin=jsonplaceholder.typicode.com
 originHostHeader=jsonplaceholder.typicode.com
 originPath=/posts # /posts/id
 
-# create resource gorup
+# create resource gorup or ignore if already exists.
 az group create \
 	-l $resourceGroupLocation \
 	-n $resourceGroup
